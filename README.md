@@ -31,6 +31,7 @@ Written using Python Django and mezzanine
 4. Footer is not displayed correctly in mobile resolution.
 5. Dropdown menu design is not good (look: Haqqımızda > Komanda).
 6. Recent blog posts in homepage need some work, currently there is only 1 item. (3 posts for every item)
+7. Disable mobile version
 
 
 **0.1**:
