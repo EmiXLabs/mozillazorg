@@ -18,22 +18,19 @@
 <link rel="alternate" type="application/atom+xml" title="Atom" href="{% url "blog_post_feed" "atom" %}">
 {% endifinstalled %}
 
+<link rel="stylesheet" media="screen,projection,tv" href="//mozorg.cdn.mozilla.net/media/css/l10n/az/intl.css">
+<link rel="stylesheet" media="screen,projection,tv" href="//mozorg.cdn.mozilla.net/media/css/responsive-min.css" />
+<link href="//mozorg.cdn.mozilla.net/media/css/tabzilla-min.css" rel="stylesheet" />
 
 {% compress css %}
 
 <link rel="stylesheet" href="{% static "css/bootstrap.min.css" %}">
 <link rel="stylesheet" href="{% static "css/mezzanine.css" %}">
 
-    <link rel="stylesheet" media="screen,projection,tv" href="{% static "css/intl.css" %}">
     <link href="{% static "css/font-awesome.min.css" %}" rel="stylesheet">
     <link href="{% static "css/prettyPhoto.css" %}" rel="stylesheet">
     <link href="{% static "css/animate.css" %}" rel="stylesheet">
-    <link rel="stylesheet" media="screen,projection,tv" href="{% static "css/responsive-min.css" %}" />
-    <link href="//mozorg.cdn.mozilla.net/media/css/tabzilla-min.css" rel="stylesheet" />
     <link href="{% static "css/main.css" %}" rel="stylesheet">
-
-
-
 
 {% if LANGUAGE_BIDI %}
 <link rel="stylesheet" href="{% static "css/rtl.css" %}">
