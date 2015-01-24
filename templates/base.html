@@ -27,6 +27,7 @@
     <link href="{% static "css/font-awesome.min.css" %}" rel="stylesheet">
     <link href="{% static "css/prettyPhoto.css" %}" rel="stylesheet">
     <link href="{% static "css/animate.css" %}" rel="stylesheet">
+    <link rel="stylesheet" media="screen,projection,tv" href="{% static "css/intl.css" %}">
 
 
 
@@ -42,7 +43,6 @@
 {% endifinstalled %}
 {% block extra_css %}{% endblock %}
 {% endcompress %}
-<link rel="stylesheet" media="screen,projection,tv" href="//mozorg.cdn.mozilla.net/media/css/l10n/az/intl.css">
 <link rel="stylesheet" media="screen,projection,tv" href="//mozorg.cdn.mozilla.net/media/css/responsive-min.css" />
 <link href="//mozorg.cdn.mozilla.net/media/css/tabzilla-min.css" rel="stylesheet" />
 {% compress css %}
@@ -52,7 +52,7 @@
  <!--[if lt IE 9]>
     <script src="{% static "js/html5shiv.js" %}"></script>
     <script src="{% static "js/respond.min.js" %}"></script>
-    <![endif]-->       
+    <![endif]-->
     <link rel="shortcut icon" href="images/ico/favicon.ico">
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
