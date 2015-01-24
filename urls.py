@@ -6,17 +6,37 @@ from django.contrib import admin
 
 from mezzanine.core.views import direct_to_template
 
+from django.contrib.sitemaps import GenericSitemap
+from mezzanine.blog.models import BlogPost
+from mezzanine.pages.models import RichTextPage
+
 
 admin.autodiscover()
+
+# Sitemaps
+# Define information to be published in dictionaries
+blog_dict = {
+    'queryset': BlogPost.objects.published(),
+    'date_field': 'created',
+}
+page_dict = {
+    'queryset': RichTextPage.objects.published(),
+}
+
+sitemaps = {
+    'pages': GenericSitemap(page_dict, priority=0.6),
+    'blog': GenericSitemap(blog_dict, priority=0.6),
+}
 
 # Add the urlpatterns for any custom Django applications here.
 # You can also change the ``home`` view to add your own functionality
 # to the project's homepage.
 
-urlpatterns = i18n_patterns("",
+urlpatterns = patterns("",
     # Change the admin prefix here to use an alternate URL for the
     # admin interface, which would be marginally more secure.
     ("^admin/", include(admin.site.urls)),
+    (r'^sitemap\.xml$', 'django.contrib.sitemaps.views.sitemap', {'sitemaps': sitemaps}),
 )
 
 urlpatterns += patterns('',
