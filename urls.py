@@ -1,7 +1,6 @@
 from __future__ import unicode_literals
 
 from django.conf.urls import patterns, include, url
-from django.conf.urls.i18n import i18n_patterns
 from django.contrib import admin
 
 from mezzanine.core.views import direct_to_template
@@ -9,6 +8,7 @@ from mezzanine.core.views import direct_to_template
 from django.contrib.sitemaps import GenericSitemap
 from mezzanine.blog.models import BlogPost
 from mezzanine.pages.models import RichTextPage
+from mezzanine.forms.models import Form
 
 
 admin.autodiscover()
@@ -22,9 +22,13 @@ blog_dict = {
 page_dict = {
     'queryset': RichTextPage.objects.published(),
 }
+form_dict = {
+    'queryset': Form.objects.published(),
+}
 
 sitemaps = {
     'pages': GenericSitemap(page_dict, priority=0.6),
+    'forms': GenericSitemap(form_dict, priority=0.6),
     'blog': GenericSitemap(blog_dict, priority=0.6),
 }
 
