@@ -752,11 +752,12 @@ ul.tag-cloud li {
   border: none;
 }
 .navbar-inverse .navbar-brand {
-  font-family: "Ubuntu Bold",sans-serif;
+  font-family: "Open Sans Light",X-LocaleSpecific-Light,sans-serif;
   font-weight: bold;
   font-size: 36px;
   line-height: 45px;
   color: #FFF;
+  padding-right: 5px;
 }
 .navbar-inverse .navbar-nav {
   margin-top: 20px;
