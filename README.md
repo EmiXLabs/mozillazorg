@@ -10,7 +10,8 @@ Written using Python Django and mezzanine
 1. Clone repository to somewhere in your computer
 2. Install requirements: `pip install -r requirements.txt`
 3. Run: `python manage.py runserver`
-
+4. Manage settings using `local_settings.py`
+5. Deploy: `fab deploy`
 
 **Localization**:
 
@@ -34,9 +35,7 @@ Written using Python Django and mezzanine
 7. Disable mobile version
 
 
-**0.1**:
-
-First release, first design, localization, optimization for local language.
+**Read CHANGELOG.md for Changes!**
 
 
 [![Analytics](https://ga-beacon.appspot.com/UA-36541010-2/mozillazorg/)](http://www.mozillaz.org)
