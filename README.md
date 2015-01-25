@@ -26,8 +26,10 @@ Written using Python Django and mezzanine
 
 **TODO**:
 
+List of basic todos. For issues and suggestions check issues page in Github.
+
 1. Slider is not customizable, need to move it to admin.
-2. Disable 'Accept-Language', so that 'az' will be default for all.
+2. (done) Disable 'Accept-Language', so that 'az' will be default for all.
 3. Make support for 'en' local (through selecting or direct url) for foreign visitors.
 4. Footer is not displayed correctly in mobile resolution.
 5. Dropdown menu design is not good (look: Haqqımızda > Komanda).

@@ -1,6 +1,7 @@
 **25/01/2015**:
 
 * Changelog file added
+* Solved problem with ignoring Accept-Language
 
 **24/01/2015**:
 
