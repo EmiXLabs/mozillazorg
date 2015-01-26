@@ -1,49 +1,69 @@
 {% load i18n future pages_tags blog_tags keyword_tags mezzanine_tags %}
 
 <nav class="row">
-          <div class="col col-1">
-            <h1 class="logo"><a href="https://www.mozilla.org/az/">Mozilla</a></h1>
-            <p class="license">Bu məzmunun bir hissəsi ©1998–2015 mozilla.org<br/>proyektinin iştirakçıları tərəfindən yaradılıb. Məzmun <a href="https://www.mozilla.org/az/foundation/licensing/website-content/">Creative Commons lisenziyası</a> ilə mövcuddur.</p>
-          </div>
-          <div class="col col-2">
-            <ul class="links-join">
-              <li><a href="https://www.mozilla.org/az/contact/spaces/">Bizimlə Əlaqə</a></li>
-              <li class="wrap"><a href="https://www.mozilla.org/az/about/partnerships/">Bizimlə iş birliyi</a></li>
-              <li class="clear"><a href="https://sendto.mozilla.org/page/contribute/Give-Now?source=mozillaorg_default_footer" class="donate">İanə</a></li>
-              <li class="wrap"><a href="https://affiliates.mozilla.org/">Firefox Köməkçiləri</a></li>
-              <li class="clear"><a href="https://github.com/EmiXLabs/mozillazorg/">Bu səhifəyə töhfə verin</a></li>
-            </ul>
-            <ul class="links-legal">
-              <li><a href="https://www.mozilla.org/az/privacy/">Məxfilik</a></li>
-              <li class="wrap"><a href="https://www.mozilla.org/az/privacy/websites/#cookies">Çərəzlər</a></li>
-              <li class="wrap"><a href="https://www.mozilla.org/az/about/legal/">Qanuni</a></li>
-              <li class="clear"><a href="https://www.mozilla.org/az/about/legal/fraud-report/">Əmtəə Nişanının Qanunsuz İstifadəsi Haqqında Xəbər Ver</a></li>
-            </ul>
-          </div>
-          <div class="col col-3">
-            <ul class="links-social">
-              <li>
-                Mozilla Azerbaijan:
-                <ul>
-                  <li><a href="https://twitter.com/mozilla_az">Twitter<span> (@mozilla_az)</span></a></li>
-                  <li><a href="https://www.facebook.com/mozillaz.org">Facebook<span> (Mozilla Azerbaijan)</span></a></li>
-                </ul>
-              </li>
-              <li>
-                Mozilla:
-                <ul>
-                  <li><a href="https://twitter.com/mozilla">Twitter<span> (@mozilla)</span></a></li>
-                  <li><a href="https://www.facebook.com/mozilla">Facebook<span> (Mozilla)</span></a></li>
-                </ul>
-              </li>
-              <li>
-                Firefox:
-                <ul>
-                  <li><a href="https://twitter.com/firefox">Twitter<span> (@firefox)</span></a></li>
-                  <li><a href="https://www.facebook.com/Firefox">Facebook<span> (Firefox)</span></a></li>
-                  <li><a href="https://www.youtube.com/firefoxchannel">YouTube<span> (firefoxchannel)</span></a></li>
-                </ul>
-              </li>
-            </ul>
-          </div>
+  <div class="col col-1">
+    <h1 class="logo"><a href="https://www.mozilla.org/{{ LANGUAGE_CODE }}/">Mozilla</a></h1>
+    <p class="license">{% trans "Portions of this content are ©1998–2015 by individual mozilla.org contributors. Content available under a <a href='https://www.mozilla.org/az/foundation/licensing/website-content/'>Creative Commons license.</a>" %}</p>
+  </div>
+  <div class="col col-2">
+    <ul class="links-join">
+      <li><a href="https://www.mozilla.org/{{ LANGUAGE_CODE }}/contact/spaces/">{% trans "Contact Us" %}</a></li>
+      <li class="wrap"><a href="https://www.mozilla.org/{{ LANGUAGE_CODE }}/about/partnerships/">{% trans "Partner with Us" %}</a></li>
+      <li class="clear"><a href="https://sendto.mozilla.org/page/contribute/Give-Now?source=mozillaorg_default_footer" class="donate">{% trans "Donate" %}</a></li>
+      <li class="wrap"><a href="https://affiliates.mozilla.org/">{% trans "Firefox Affiliates" %}</a></li>
+      <li class="clear"><a href="https://github.com/EmiXLabs/mozillazorg/">{% trans "Contribute to this page" %}</a></li>
+    </ul>
+    <ul class="links-legal">
+      <li><a href="https://www.mozilla.org/{{ LANGUAGE_CODE }}/privacy/">{% trans "Privacy" %}</a></li>
+      <li class="wrap"><a href="https://www.mozilla.org/{{ LANGUAGE_CODE }}/privacy/websites/#cookies">{% trans "Cookies" %}</a></li>
+      <li class="wrap"><a href="https://www.mozilla.org/{{ LANGUAGE_CODE }}/about/legal/">{% trans "Legal" %}</a></li>
+      <li class="clear"><a href="https://www.mozilla.org/{{ LANGUAGE_CODE }}/about/legal/fraud-report/">{% trans "Report Trademark Abuse" %}</a></li>
+    </ul>
+  </div>
+  <div class="col col-3">
+    <ul class="links-social">
+      <li>
+        Mozilla Azerbaijan:
+        <ul>
+          <li><a href="https://twitter.com/mozilla_az">Twitter<span> (@mozilla_az)</span></a></li>
+          <li><a href="https://www.facebook.com/mozillaz.org">Facebook<span> (Mozilla Azerbaijan)</span></a></li>
+        </ul>
+      </li>
+      <li>
+        Mozilla:
+        <ul>
+          <li><a href="https://twitter.com/mozilla">Twitter<span> (@mozilla)</span></a></li>
+          <li><a href="https://www.facebook.com/mozilla">Facebook<span> (Mozilla)</span></a></li>
+        </ul>
+      </li>
+      <li>
+        Firefox:
+        <ul>
+          <li><a href="https://twitter.com/firefox">Twitter<span> (@firefox)</span></a></li>
+          <li><a href="https://www.facebook.com/Firefox">Facebook<span> (Firefox)</span></a></li>
+          <li><a href="https://www.youtube.com/firefoxchannel">YouTube<span> (firefoxchannel)</span></a></li>
+        </ul>
+      </li>
+    </ul>
+    <div class="lang-switcher">
+      <form action="{% url 'set_language' %}" method="post">
+        {% csrf_token %}
+        <input name="next" type="hidden" value="{{ redirect_to }}" />
+        <label for="language">{% trans "Other languages:" %}</label>
+        <select id="language" name="language" dir="ltr" onchange="this.form.submit()">
+            {% get_current_language as LANGUAGE_CODE %}
+            {% get_available_languages as LANGUAGES %}
+            {% get_language_info_list for LANGUAGES as languages %}
+            {% for language in languages %}
+                <option value="{{ language.code }}"{% if language.code == LANGUAGE_CODE %} selected="selected"{% endif %}>
+                {{ language.name_local }} ({{ language.code }})
+                </option>
+            {% endfor %}
+        </select>
+        <noscript>
+            <button type="submit">Go</button>
+        </noscript>
+      </form>
+    </div>
+  </div>
 </nav>

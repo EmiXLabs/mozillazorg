@@ -2,6 +2,8 @@
 
 * Changelog file added
 * Solved problem with ignoring Accept-Language
+* Added 'en' language
+* Added language switcher
 
 **24/01/2015**:
 

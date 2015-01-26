@@ -115,10 +115,23 @@ LANGUAGE_CODE = "az"
 # Supported languages
 _ = lambda s: s
 LANGUAGES = (
+    ('en', _('English')),
     ('az', _('Azerbaijani')),
-    ('en', _('English'))
 )
-DEFAULT_LANGUAGE = 1
+DEFAULT_LANGUAGE = 2
+
+### Enable language select by entering lang code in URL
+# !!! Conflicts with i18n/setlang
+# plugin: django-localeurl
+# This paths will not use locale like /az/, /en/
+# Documentation: https://bitbucket.org/carljm/django-localeurl
+# LOCALE_INDEPENDENT_PATHS = (
+# )
+#
+# # If true, /az/ (LANGUAGE_CODE) will not be used, others will
+# PREFIX_DEFAULT_LOCALE = True
+#
+# LOCALEURL_USE_SESSION = True
 
 # A boolean that turns on/off debug mode. When set to ``True``, stack traces
 # are displayed for error pages. Should always be set to ``False`` in
@@ -227,6 +240,7 @@ ROOT_URLCONF = "%s.urls" % PROJECT_DIRNAME
 # Don't forget to use absolute paths, not relative paths.
 TEMPLATE_DIRS = (os.path.join(PROJECT_ROOT, "templates"),)
 
+LOCALE_PATHS = (os.path.join(PROJECT_ROOT, "locale"),)
 
 ################
 # APPLICATIONS #
@@ -249,6 +263,7 @@ INSTALLED_APPS = (
     "mezzanine.forms",
     "mezzanine.pages",
     "mezzanine.galleries",
+    #"localeurl",
     #"mezzanine.twitter",
     #"mezzanine.accounts",
     #"mezzanine.mobile",
@@ -278,6 +293,7 @@ MIDDLEWARE_CLASSES = (
     "django.contrib.sessions.middleware.SessionMiddleware",
     "middlewares.ForceDefaultLanguageMiddleware",
     "django.middleware.locale.LocaleMiddleware",
+    #"localeurl.middleware.LocaleURLMiddleware",
     "django.contrib.auth.middleware.AuthenticationMiddleware",
     "django.middleware.common.CommonMiddleware",
     "django.middleware.csrf.CsrfViewMiddleware",

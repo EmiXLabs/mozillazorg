@@ -5,7 +5,7 @@
     {% for error in form.non_field_errors %}
     <div class="alert alert-danger non-field-error">{{ error }}</div>
     {% empty %}
-    <div class="alert alert-danger field-error">{% trans "Lütfən aşağıdakı xətaları düzəldin." %}</div>
+    <div class="alert alert-danger field-error">{% trans "Please correct the errors below." %}</div>
     {% endfor %}
 </div>
 {% endif %}

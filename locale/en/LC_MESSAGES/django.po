@@ -1,30 +1,29 @@
-# Mozilla Azerbaijan Community Website.
-# Copyright (C) 2015 Mozilla Azerbaijan
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-# Translators:
-# Emin Mastizada <emin@mastizada.com>, 2015
+#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Mezzanine\n"
+"Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-01-26 02:56+0200\n"
-"PO-Revision-Date: 2015-01-25 23:38+0200\n"
-"Last-Translator: Emin Mastizada <emin@mastizada.com>\n"
-"Language-Team: Azerbaijani <az@li.org>\n"
-"Language: az\n"
+"POT-Creation-Date: 2015-01-26 02:34+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
 
 #: models.py:68 models.py:116
 msgid "Title"
-msgstr "Başlıq"
+msgstr ""
 
 #: models.py:69
 msgid "URL"
-msgstr "URL"
+msgstr ""
 
 #: models.py:70
 msgid "Leave blank to have the URL auto-generated from the title."
@@ -32,7 +31,7 @@ msgstr ""
 
 #: models.py:106
 msgid "View on site"
-msgstr "Saytda gör"
+msgstr ""
 
 #: models.py:118
 msgid ""
@@ -120,15 +119,15 @@ msgstr ""
 
 #: settings.py:118
 msgid "English"
-msgstr "İngilizcə"
+msgstr ""
 
 #: settings.py:119
 msgid "Azerbaijani"
-msgstr "Azərbaycanca"
+msgstr ""
 
 #: templates/base.html:90
 msgid "Toggle navigation"
-msgstr "Naviqasiyanı keçir"
+msgstr ""
 
 #: templates/index.html:3 templates/index.html.py:4
 #: templates/search_results.html:13 templates/mobile/base.html:36
@@ -139,74 +138,72 @@ msgstr "Naviqasiyanı keçir"
 #: templates/pages/menus/mobile.html:10 templates/pages/menus/primary.html:8
 #: templates/pages/menus/tree.html:9
 msgid "Home"
-msgstr "Ana Səhifə"
+msgstr ""
 
 #: templates/index.html:23
 msgid "Firefox: The independent choice"
-msgstr "Firefox: Azad seçim"
+msgstr ""
 
 #: templates/index.html:24
 msgid "Help us celebrate 10 years of choice and independence online."
-msgstr "Onlayn seçimin və azadlığın 10 illiyini qeyd etməkdə bizə kömək edin."
+msgstr ""
 
 #: templates/index.html:25 templates/index.html.py:62 templates/index.html:76
 #: templates/pages/index.html:34 templates/pages/index.html.py:52
 msgid "Learn More"
-msgstr "Ətraflı Öyrən"
+msgstr ""
 
 #: templates/index.html:56
 msgid "Choose Independent, Choose Firefox"
-msgstr "Azadlığı Seç, Firefox-u Seç"
+msgstr ""
 
 #: templates/index.html:58
 msgid "Most Trusted Internet Company For Privacy"
-msgstr "Məxfilikdə Ən Güvənli İnternet Şirkəti"
+msgstr ""
 
 #: templates/index.html:73
 msgid "Firefox Hello - As easy as saying hello"
-msgstr "Firefox Hello - Salam demək qədər asan"
+msgstr ""
 
 #: templates/index.html:74
 msgid ""
 "Meet Firefox Hello, the easiest way to connect for free over video with "
 "anyone, anywhere."
 msgstr ""
-"Firefox Hello ilə tanış olun, hər kəslə, hər yerdə pulsuz video ilə "
-"bağlanmanın ən asan yolu."
 
 #: templates/index.html:94
 msgid "Firefox Desktop"
-msgstr "Masaüstü üçün Firefox"
+msgstr ""
 
 #: templates/index.html:94
 msgid "Get it free on Mozilla"
-msgstr "Mozilladan Endir"
+msgstr ""
 
 #: templates/index.html:96
 msgid "Firefox for Android"
-msgstr "Android üçün Firefox"
+msgstr ""
 
 #: templates/index.html:96
 msgid "Get it on Google Play"
-msgstr "Google Playdən Endir"
+msgstr ""
 
 #: templates/index.html:104
 msgid "Latest Posts"
-msgstr "Son Yazılarımız"
+msgstr ""
 
 #: templates/index.html:105
 msgid "Mozilla Azerbaijan News"
-msgstr "Mozilla Azərbaycan Xəbərləri"
+msgstr ""
 
 #: templates/index.html:105
 msgid "Information for media is available in our media page."
-msgstr "Media məlumatlar üçün media səhifəmizə baxın"
+msgstr ""
 
 #: templates/search_results.html:5 templates/search_results.html.py:6
 #: templates/search_results.html:15 templates/mobile/search_results.html:5
 #: templates/mobile/search_results.html:6
 msgid "Search Results"
-msgstr "Axtarış Nəticələri"
+msgstr ""
 
 #: templates/search_results.html:22
 #, python-format
@@ -214,8 +211,6 @@ msgid ""
 "\n"
 "No results were found in %(search_type)s matching your query: %(query)s\n"
 msgstr ""
-"\n"
-"%(query)s üçün %(search_type)s bölümündə heç bir nəticə tapılmadı\n"
 
 #: templates/search_results.html:26
 #, python-format
@@ -224,15 +219,12 @@ msgid ""
 "Showing %(start)s to %(end)s of %(total)s results in %(search_type)s "
 "matching your query: %(query)s\n"
 msgstr ""
-"\n"
-"%(query)s sorğunuza uyğun %(search_type)s bölümündəki %(total)s nəticədən "
-"%(start)s / %(end)s göstərilir\n"
 
 #: templates/search_results.html:37 templates/blog/blog_post_detail.html:91
 #: templates/blog/blog_post_list.html:152
 #: templates/mobile/search_results.html:23
 msgid "read more"
-msgstr "ətraflı oxu"
+msgstr ""
 
 #: templates/accounts/account_login.html:7
 msgid ""
@@ -287,17 +279,17 @@ msgstr ""
 #: templates/accounts/includes/user_panel_nav.html:11
 #: templates/includes/editable_toolbar.html:9
 msgid "Log out"
-msgstr "Çıxış"
+msgstr ""
 
 #: templates/accounts/includes/user_panel.html:27
 #: templates/accounts/includes/user_panel_nav.html:14
 msgid "Log in"
-msgstr "Daxil ol"
+msgstr ""
 
 #: templates/accounts/includes/user_panel.html:30
 #: templates/accounts/includes/user_panel_nav.html:16
 msgid "Sign up"
-msgstr "Qeydiyyat"
+msgstr ""
 
 #: templates/blog/blog_post_detail.html:53
 #: templates/blog/blog_post_list.html:114
@@ -314,59 +306,58 @@ msgstr ""
 #: templates/twitter/tweets.html:19
 #, python-format
 msgid "%(sometime)s ago"
-msgstr "%(sometime)s əvvəl"
+msgstr ""
 
 #: templates/blog/blog_post_detail.html:68
 #: templates/blog/blog_post_list.html:129
 #: templates/generic/includes/comments.html:4
 msgid "Comments"
-msgstr "Şərhlər"
+msgstr ""
 
 #: templates/blog/blog_post_detail.html:72
 #: templates/blog/blog_post_list.html:133
 #, python-format
 msgid "%(comments_count)s comment"
 msgid_plural "%(comments_count)s comments"
-msgstr[0] "%(comments_count)s şərh"
-msgstr[1] "%(comments_count)s şərh"
+msgstr[0] ""
+msgstr[1] ""
 
 #: templates/blog/blog_post_detail.html:96
 #: templates/blog/blog_post_list.html:157
 #: templates/blog/includes/filter_panel.html:59
 #: templates/mobile/blog/blog_post_detail.html:41
 msgid "Tags"
-msgstr "Teqlər"
+msgstr ""
 
 #: templates/blog/blog_post_detail.html:128
-#, fuzzy
 msgid "Share on Twitter"
-msgstr "Twitterdə Paylaş"
+msgstr ""
 
 #: templates/blog/blog_post_detail.html:129
 msgid "Share on Facebook"
-msgstr "Facebookda Paylaş"
+msgstr ""
 
 #: templates/blog/blog_post_detail.html:154
 msgid "Related posts"
-msgstr "Bağlı yazılar"
+msgstr ""
 
 #: templates/blog/blog_post_list.html:4 templates/blog/blog_post_list.html:22
 #: templates/mobile/blog/blog_post_list.html:4
 #: templates/mobile/blog/blog_post_list.html:19
 msgid "Blog"
-msgstr "Bloq"
+msgstr ""
 
 #: templates/blog/blog_post_list.html:31
 msgid "Tag:"
-msgstr "Teq:"
+msgstr ""
 
 #: templates/blog/blog_post_list.html:33
 msgid "Category:"
-msgstr "Kateqoriya:"
+msgstr ""
 
 #: templates/blog/blog_post_list.html:37
 msgid "Author:"
-msgstr "Yazar:"
+msgstr ""
 
 #: templates/blog/blog_post_list.html:60
 msgid "Viewing posts tagged"
@@ -386,41 +377,41 @@ msgstr ""
 
 #: templates/blog/includes/filter_panel.html:6
 msgid "Recent Posts"
-msgstr "Son Yazılar"
+msgstr ""
 
 #: templates/blog/includes/filter_panel.html:19
 msgid "Archive"
-msgstr "Arxiv"
+msgstr ""
 
 #: templates/blog/includes/filter_panel.html:36
 msgid "Categories"
-msgstr "Kateqoriyalar"
+msgstr ""
 
 #: templates/blog/includes/filter_panel.html:76
 msgid "Authors"
-msgstr "Yazarlar"
+msgstr ""
 
 #: templates/blog/includes/filter_panel.html:88
 msgid "Feeds"
-msgstr "Axın"
+msgstr ""
 
 #: templates/blog/includes/filter_panel.html:90
 #: templates/blog/includes/filter_panel.html:94
 #: templates/blog/includes/filter_panel.html:98
 #: templates/blog/includes/filter_panel.html:102
 msgid "RSS"
-msgstr "RSS"
+msgstr ""
 
 #: templates/blog/includes/filter_panel.html:91
 #: templates/blog/includes/filter_panel.html:95
 #: templates/blog/includes/filter_panel.html:99
 #: templates/blog/includes/filter_panel.html:103
 msgid "Atom"
-msgstr "Atom"
+msgstr ""
 
 #: templates/email/comment_notification.html:6
 msgid "A new comment has been posted on"
-msgstr "Yeni şərh əlavə edildi:"
+msgstr ""
 
 #: templates/email/comment_notification.html:10
 #, python-format
@@ -440,7 +431,7 @@ msgstr ""
 #: templates/errors/404.html:6 templates/errors/404.html.py:10
 #: templates/errors/404.html:15 templates/mobile/404.html:6
 msgid "Page not found"
-msgstr "Səhifə Tapılmadı"
+msgstr ""
 
 #: templates/errors/404.html:16
 msgid ""
@@ -448,117 +439,112 @@ msgid ""
 "if you are sure that its our fault, then please, contact us. Happy "
 "Browsing..."
 msgstr ""
-"Çox əlləşdik amma belə bir səhifə tapa bilmədik. Axtarışı yoxlayın, əgər "
-"bunu bizim səhvimiz olduğuna əminsinizsə mütləq əlaqə formundan bizə yazın. "
-"Xoş səyahətlər..."
 
 #: templates/errors/500.html:6 templates/errors/500.html.py:10
 #: templates/errors/500.html:15 templates/mobile/500.html:6
 msgid "Error"
-msgstr "Xəta"
+msgstr ""
 
 #: templates/errors/500.html:16
 msgid ""
 "Sorry, something crashed. We will analyse that as soon as possible. Happy "
 "Browsing..."
 msgstr ""
-"Üzv istəyirik, gözlənilməz xəta baş verdi. Tez bir zamanda bunu təhlil "
-"edəcik. Xoş səyahətlər..."
 
 #: templates/generic/includes/comment.html:25
 #: templates/generic/includes/comment.html:45
 #: templates/generic/includes/comment.html:72
 msgid "Reply"
-msgstr "Cavabla"
+msgstr ""
 
 #: templates/generic/includes/comment.html:54
 msgid "Link"
-msgstr "Bağlantı"
+msgstr ""
 
 #: templates/generic/includes/comment.html:78
 msgid "Comment deleted"
-msgstr "Şərh silinib"
+msgstr ""
 
 #: templates/generic/includes/comment.html:80
 msgid "Comment awaiting approval"
-msgstr "Şərh təstid gözləyir"
+msgstr ""
 
 #: templates/generic/includes/comment.html:95
 msgid "There are currently no comments"
-msgstr "Hazırda heç bir şərh yoxdur"
+msgstr ""
 
 #: templates/generic/includes/comments.html:23
 msgid "New Comment"
-msgstr "Yeni Şərh"
+msgstr ""
 
 #: templates/generic/includes/rating.html:5
 msgid "Current rating"
-msgstr "Hazırki qiymət"
+msgstr ""
 
 #: templates/generic/includes/rating.html:7
 msgid "Currently unrated"
-msgstr "Hazırda qiymətləndirilməyib"
+msgstr ""
 
 #: templates/generic/includes/rating.html:17
 msgid "Rate"
-msgstr "Qiymətləndir"
+msgstr ""
 
 #: templates/includes/editable_form.html:16
 msgid "Save"
-msgstr "Yadda saxla"
+msgstr ""
 
 #: templates/includes/editable_form.html:17
 msgid "Cancel"
-msgstr "Ləğv et"
+msgstr ""
 
 #: templates/includes/editable_form.html:25
 msgid "Edit"
-msgstr "Düzəlt"
+msgstr ""
 
 #: templates/includes/editable_toolbar.html:8
 msgid "Admin"
-msgstr "Admin"
+msgstr ""
 
 #: templates/includes/form_errors.html:8
 msgid "Please correct the errors below."
-msgstr "Lütfən aşağıdakı xətaları düzəldin."
+msgstr ""
 
 #: templates/includes/pagination.html:7
 msgid "Page:"
-msgstr "Səhifə:"
+msgstr ""
 
 #: templates/includes/pagination.html:7
 msgid "/"
-msgstr "/"
+msgstr ""
 
 #: templates/includes/search_form.html:5
 #: templates/mobile/includes/search.html:4
 msgid "Search"
-msgstr "Axtar"
+msgstr ""
 
 #: templates/includes/search_form.html:14
 msgid "Everything"
-msgstr "Hər şey"
+msgstr ""
 
 #: templates/includes/search_form.html:26
 msgid "Go"
-msgstr "Get"
+msgstr ""
 
 #: templates/mobile/404.html:10
 msgid "The page you requested does not exist."
-msgstr "Sorğuladığınız səhifə mövcud deyil"
+msgstr ""
 
 #: templates/mobile/500.html:10
 msgid "Sorry, an error occurred."
-msgstr "Bağışlayın, xəta baş verdi."
+msgstr ""
 
 #: templates/mobile/base.html:49
 msgid "View Full Site"
-msgstr "Tam saytı gör"
+msgstr ""
 
 #: templates/mobile/search_results.html:12
 msgid "No results were found matching your query: "
-msgstr "Sorğunuza uyğun heç bir nəticə tapılmadı: "
+msgstr ""
 
 #: templates/mobile/search_results.html:14
 msgid "Showing"
@@ -620,50 +606,47 @@ msgid ""
 "contributors. Content available under a <a href='https://www.mozilla.org/az/"
 "foundation/licensing/website-content/'>Creative Commons license.</a>"
 msgstr ""
-"Bu məzmunun bir hissəsi ©1998–2015 mozilla.org proyektinin iştirakçıları "
-"tərəfindən yaradılıb. Məzmun <a href='https://www.mozilla.org/az/foundation/"
-"licensing/website-content/'>Creative Commons lisenziyası</a> ilə mövcuddur."
 
 #: templates/pages/menus/footer.html:10
 msgid "Contact Us"
-msgstr "Bizimlə Əlaqə"
+msgstr ""
 
 #: templates/pages/menus/footer.html:11
 msgid "Partner with Us"
-msgstr "Bizimlə iş birliyi"
+msgstr ""
 
 #: templates/pages/menus/footer.html:12
 msgid "Donate"
-msgstr "İanə"
+msgstr ""
 
 #: templates/pages/menus/footer.html:13
 msgid "Firefox Affiliates"
-msgstr "Firefox Köməkçiləri"
+msgstr ""
 
 #: templates/pages/menus/footer.html:14
 msgid "Contribute to this page"
-msgstr "Bu səhifəyə töhfə verin"
+msgstr ""
 
 #: templates/pages/menus/footer.html:17
 msgid "Privacy"
-msgstr "Məxfilik"
+msgstr ""
 
 #: templates/pages/menus/footer.html:18
 msgid "Cookies"
-msgstr "Çərəzlər"
+msgstr ""
 
 #: templates/pages/menus/footer.html:19
 msgid "Legal"
-msgstr "Qanuni"
+msgstr ""
 
 #: templates/pages/menus/footer.html:20
 msgid "Report Trademark Abuse"
-msgstr "Əmtəə Nişanının Qanunsuz İstifadəsi"
+msgstr ""
 
 #: templates/pages/menus/footer.html:52
 msgid "Other languages:"
-msgstr "Digər dillər:"
+msgstr ""
 
 #: templates/twitter/tweets.html:7
 msgid "Recent Tweets"
-msgstr "Son Tweetlər"
+msgstr ""

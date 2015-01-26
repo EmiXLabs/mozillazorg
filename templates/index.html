@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 {% load i18n staticfiles blog_tags mezzanine_tags %}
-{% block meta_title %}{% trans "Ana Səhifə" %}{% endblock %}
-{% block title %}{% trans "Ana Səhifə" %}{% endblock %}
+{% block meta_title %}{% trans "Home" %}{% endblock %}
+{% block title %}{% trans "Home" %}{% endblock %}
 {% block top %}
 
 {% endblock %}
@@ -20,9 +20,9 @@
                         <div class="row">
                             <div class="col-sm-6">
                                 <div class="carousel-content centered" style="margin-top: 219px;">
-                                    <h2 class="animation animated-item-1">Firefox: Azad seçim</h2>
-                                    <p class="animation animated-item-2">Onlayn seçimin və azadlığın 10 illiyini qeyd etməkdə bizə kömək edin.</p>
-                                    <a href="https://www.mozilla.org/az/firefox/independent/#play" class="btn btn-md animation animated-item-3">Ətraflı Öyrən</a>
+                                    <h2 class="animation animated-item-1">{% trans "Firefox: The independent choice" %}</h2>
+                                    <p class="animation animated-item-2">{% trans "Help us celebrate 10 years of choice and independence online." %}</p>
+                                    <a href="https://www.mozilla.org/az/firefox/independent/#play" class="btn btn-md animation animated-item-3">{% trans "Learn More" %}</a>
                                 </div>
                             </div>
                             <div class="col-sm-6 hidden-xs animation animated-item-4">
@@ -53,13 +53,13 @@
                         <div class="row">
                             <div class="col-sm-12">
                                 <div class="carousel-content center centered" style="margin-top: 208.5px;">
-                                    <h2 class="boxed animation animated-item-1">Azadlığı Seç, Firefox-u Seç</h2>
+                                    <h2 class="boxed animation animated-item-1">{% trans "Choose Independent, Choose Firefox" %}</h2>
                                     <br/>
-                                    <p class="boxed animation animated-item-2">Ən güvənli, Ən Sürətli İnternet Səyyahı</p>
+                                    <p class="boxed animation animated-item-2">{% trans "Most Trusted Internet Company For Privacy" %}</p>
                                     <br/>
                                     <a href="https://www.mozilla.org/az/firefox/"><img src="{% static "img/downloadfx.png" %}"></a>
                                     <br/>
-                                    <a href="https://www.mozilla.org/az/firefox/desktop/" class="btn btn-md animation animated-item-3">Ətraflı Öyrən</a>
+                                    <a href="https://www.mozilla.org/az/firefox/desktop/" class="btn btn-md animation animated-item-3">{% trans "Learn More" %}</a>
                                 </div>
                             </div>
                         </div>
@@ -70,10 +70,10 @@
                         <div class="row">
                             <div class="col-sm-12">
                                 <div class="carousel-content center centered" style="margin-top: 208.5px;">
-                                    <h2 class="boxed animation animated-item-1">Firefox Hello - Salam demək qədər asan</h2>
-                                    <p class="boxed animation animated-item-2">Firefox Hello ilə tanış olun, hər kəslə, hər yerdə pulsuz video ilə bağlanmanın ən asan yolu.</p>
+                                    <h2 class="boxed animation animated-item-1">{% trans "Firefox Hello - As easy as saying hello" %}</h2>
+                                    <p class="boxed animation animated-item-2">{% trans "Meet Firefox Hello, the easiest way to connect for free over video with anyone, anywhere." %}</p>
                                     <br>
-                                    <a href="https://www.mozilla.org/az/firefox/hello/" class="btn btn-md boxed animation animated-item-3">Ətraflı Öyrən</a>
+                                    <a href="https://www.mozilla.org/az/firefox/hello/" class="btn btn-md boxed animation animated-item-3">{% trans "Learn More" %}</a>
                                 </div>
                             </div>
                         </div>
@@ -91,9 +91,9 @@
     <section class="download-section" id="services">
       <CENTER>
         <div id="download">
-            <a href="https://www.mozilla.org/az/firefox/" target="_blank">Masaüstü üçün Firefox<small>Mozilladan Pulsuz Endir</small></a>
+            <a href="https://www.mozilla.org/az/firefox/" target="_blank">{% trans "Firefox Desktop" %}<small>{% trans "Get it free on Mozilla" %}</small></a>
             <img class="logo" src="https://mozorg.cdn.mozilla.net/media/img/styleguide/identity/firefox/usage-logo.png">
-            <a href="https://play.google.com/store/apps/details?id=org.mozilla.firefox&referrer=utm_source%3Dmozilla%26utm_medium%3DReferral%26utm_campaign%3Dmozillaz-org" target="_blank">Android üçün Firefox<small>Google Play-dən Endir</small></a>
+            <a href="https://play.google.com/store/apps/details?id=org.mozilla.firefox&referrer=utm_source%3Dmozilla%26utm_medium%3DReferral%26utm_campaign%3Dmozillaz-org" target="_blank">{% trans "Firefox for Android" %}<small>{% trans "Get it on Google Play" %}</small></a>
         </div>
       </CENTER>
     </section>
@@ -101,8 +101,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-3">
-                    <h3>Son Yazılarımız</h3>
-                    <p>Mozilla Azərbaycan xəbərləri. Media məlumatları üçün Media səhifəsinə baxın.</p>
+                    <h3>{% trans "Latest Posts" %}</h3>
+                    <p>{% trans "Mozilla Azerbaijan News" %}. {% trans "Information for media is available in our media page." %}</p>
                     <div class="btn-group">
                         <a class="btn btn-danger" href="#scroller" data-slide="prev"><i class="icon-angle-left"></i></a>
                         <a class="btn btn-danger" href="#scroller" data-slide="next"><i class="icon-angle-right"></i></a>

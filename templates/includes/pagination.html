@@ -4,7 +4,7 @@
 <ul class="pagination">
 
 <li class="page-info">
-    <span>{% trans "Səhifə:" %} {{ current_page.number }} {% trans "/" %} {{ current_page.paginator.num_pages }}</span>
+    <span>{% trans "Page:" %} {{ current_page.number }} {% trans "/" %} {{ current_page.paginator.num_pages }}</span>
 </li>
 <li class="prev previous{% if not current_page.has_previous %} disabled{% endif %}">
     <a{% if current_page.has_previous %} href="?{{ page_var }}={{ current_page.previous_page_number }}{% if querystring %}&{{ querystring }}{% endif %}"{% endif %}>&larr;</a>

@@ -1,6 +1,7 @@
 from __future__ import unicode_literals
 
 from django.conf.urls import patterns, include, url
+from django.conf.urls.i18n import i18n_patterns
 from django.contrib import admin
 
 from mezzanine.core.views import direct_to_template
@@ -36,7 +37,7 @@ sitemaps = {
 # You can also change the ``home`` view to add your own functionality
 # to the project's homepage.
 
-urlpatterns = patterns("",
+urlpatterns = patterns('',
     # Change the admin prefix here to use an alternate URL for the
     # admin interface, which would be marginally more secure.
     ("^admin/", include(admin.site.urls)),
@@ -44,7 +45,6 @@ urlpatterns = patterns("",
 )
 
 urlpatterns += patterns('',
-
     # We don't want to presume how your homepage works, so here are a
     # few patterns you can use to set it up.
 
@@ -54,6 +54,7 @@ urlpatterns += patterns('',
     # commented out like the others, so it's the default. You only need
     # one homepage pattern, so if you use a different one, comment this
     # one out.
+    (r'^i18n/', include('django.conf.urls.i18n')),
 
     url("^$", direct_to_template, {"template": "index.html"}, name="home"),
 
@@ -110,7 +111,7 @@ urlpatterns += patterns('',
     # need to use the ``SITE_PREFIX`` setting as well.
 
     # ("^%s/" % settings.SITE_PREFIX, include("mezzanine.urls"))
-    url(r'^i18n/', include('django.conf.urls.i18n')),
+
 
 )
 
