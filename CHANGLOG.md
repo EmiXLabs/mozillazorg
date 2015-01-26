@@ -4,6 +4,8 @@
 * Solved problem with ignoring Accept-Language
 * Added 'en' language
 * Added language switcher
+* Tabzilla language switcher added
+* Design changed (Footer changed, added border to body (tabzilla styleguide)
 
 **24/01/2015**:
 
