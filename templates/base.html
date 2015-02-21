@@ -18,7 +18,7 @@
 <link rel="alternate" type="application/atom+xml" title="Atom" href="{% url "blog_post_feed" "atom" %}">
 {% endifinstalled %}
 
-
+{% load compress %}
 {% compress css %}
 
 <link rel="stylesheet" href="{% static "css/bootstrap.min.css" %}">
