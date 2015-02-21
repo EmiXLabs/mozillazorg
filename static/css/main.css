@@ -27,7 +27,7 @@
 }
 body {
   padding-top: 0px;
-  border-top: 3px solid #fff;
+  border-top: 2px solid #fff;
   color: #34495e;
   background: none repeat scroll 0% 0% #FFF;
   font-family: "Open Sans",X-LocaleSpecific,sans-serif;
@@ -1216,7 +1216,7 @@ ul.faq li > div h3 {
   width: 40%;
   display: inline-block;
   padding: 0.5rem 2rem 0.75rem;
-  font-size: 1.25rem;
+  font-size: 15px;
   text-decoration: none;
   box-shadow: 1px 1px 1px #666;
   background: linear-gradient(#81bc2e, #659324);
@@ -1237,7 +1237,7 @@ ul.faq li > div h3 {
 #download small {
   color: #346012;
   display: block;
-  font-size: 0.8rem;
+  font-size: 13px;
   text-shadow: 0 1px rgba(255, 255, 255, 0.2);
 }
 #download .logo {

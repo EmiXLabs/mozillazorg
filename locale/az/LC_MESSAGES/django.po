@@ -188,7 +188,7 @@ msgstr "Android üçün Firefox"
 
 #: templates/index.html:96
 msgid "Get it on Google Play"
-msgstr "Google Playdən Endir"
+msgstr "Google Playdə"
 
 #: templates/index.html:104
 msgid "Latest Posts"
