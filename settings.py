@@ -262,11 +262,6 @@ INSTALLED_APPS = (
     "mezzanine.blog",
     "mezzanine.forms",
     "mezzanine.pages",
-    "mezzanine.galleries",
-    #"localeurl",
-    #"mezzanine.twitter",
-    #"mezzanine.accounts",
-    #"mezzanine.mobile",
 )
 
 # List of processors used by RequestContext to populate the context.
