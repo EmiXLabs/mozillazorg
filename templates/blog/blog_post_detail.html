@@ -40,7 +40,7 @@
 		
 	
 	{% endblock %}
-{% block blog_post_detail_content %}
+{% block blog_post_list_post_metainfo %}
 {% editable blog_post.publish_date %}
                    <div class="entry-meta">
                                 <span><i class="icon-user"></i> {% with blog_post.user as author %}
@@ -84,7 +84,7 @@
 
 {% block blog_post_list_post_content %}
 {% editable blog_post.content %}
-{{ blog_post.description_from_content|safe }}
+{{ blog_post.content|safe }}
 {% endeditable %}
 {% endblock %}
 
