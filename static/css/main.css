@@ -1107,6 +1107,14 @@ ul.social > li > a:hover {
 .blog .blog-item .entry-meta > span a {
   color: #999;
 }
+.blog-content p > a {
+  color: #0096DD;
+}
+.blog-content p > a:hover, .blog-content p > a:focus {
+  color: #d9534f;
+  text-decoration: none;
+  outline: none;
+}
 ul.pagination > li > a {
   border: 0;
 }
