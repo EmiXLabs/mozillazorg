@@ -27,7 +27,7 @@
 }
 body {
   padding-top: 0px;
-  border-top: 2px solid #fff;
+  border-top: 3px solid #fff;
   color: #34495e;
   background: none repeat scroll 0% 0% #FFF;
   font-family: "Open Sans",X-LocaleSpecific,sans-serif;
@@ -1182,6 +1182,25 @@ ul.faq li > div h3 {
 }
 #tabzilla {
     z-index: 3000;
+}
+#tabzilla-infobar {
+  font-size: 10px;
+}
+#tabzilla-panel {
+  font-size: 10px;
+  /*padding: 4.0px 2.0px 3.5px 0px;*/
+}
+#tabzilla-panel #tabzilla-nav h2 {
+  letter-spacing: 0px;
+  font-size: 12px;
+  margin: 0px 20px 5px 0px;
+  word-wrap: normal;
+}
+#tabzilla-promo #tabzilla-promo-fxos.snippet a p {
+    font-size: 12.25px;
+}
+#tabzilla-promo #tabzilla-promo-fxos.snippet a h4 {
+  letter-spacing: -0.8px;
 }
 #footer > .container > .row > .col-sm-6 {
     width: 48%;
