@@ -18,19 +18,14 @@
 <link rel="alternate" type="application/atom+xml" title="Atom" href="{% url "blog_post_feed" "atom" %}">
 {% endifinstalled %}
 
+<link rel="stylesheet" href="{% static "css/bootstrap.min.css" %}">
+<link href="{% static "css/font-awesome.min.css" %}" rel="stylesheet">
 {% load compress %}
 {% compress css %}
-
-<link rel="stylesheet" href="{% static "css/bootstrap.min.css" %}">
 <link rel="stylesheet" href="{% static "css/mezzanine.css" %}">
-
-    <link href="{% static "css/font-awesome.min.css" %}" rel="stylesheet">
-    <link href="{% static "css/prettyPhoto.css" %}" rel="stylesheet">
-    <link href="{% static "css/animate.css" %}" rel="stylesheet">
-    <link rel="stylesheet" media="screen,projection,tv" href="{% static "css/intl.css" %}">
-
-
-
+<link href="{% static "css/prettyPhoto.css" %}" rel="stylesheet">
+<link href="{% static "css/animate.css" %}" rel="stylesheet">
+<link rel="stylesheet" media="screen,projection,tv" href="{% static "css/intl.css" %}">
 
 {% if LANGUAGE_BIDI %}
 <link rel="stylesheet" href="{% static "css/rtl.css" %}">
