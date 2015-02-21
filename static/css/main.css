@@ -964,7 +964,7 @@ footer {
     display: block;
     width: 88px;
     height: 24px;
-    background-image: url(/static/img/footer-mozilla-white.png);
+    background-image: url("/static/img/footer-mozilla-white.png");
     text-indent: 120%;
     white-space: nowrap;
     overflow: hidden;

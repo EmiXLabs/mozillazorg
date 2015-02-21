@@ -43,9 +43,10 @@
 {% endifinstalled %}
 {% block extra_css %}{% endblock %}
 {% endcompress %}
-<link rel="stylesheet" media="screen,projection,tv" href="//mozorg.cdn.mozilla.net/media/css/responsive-min.css" />
+<!-- <link rel="stylesheet" media="screen,projection,tv" href="//mozorg.cdn.mozilla.net/media/css/responsive-min.css" /> -->
 <link href="//mozorg.cdn.mozilla.net/media/css/tabzilla-min.css" rel="stylesheet" />
 {% compress css %}
+<link href="{% static "css/responsive-moz-min.css" %}" rel="stylesheet">
 <link href="{% static "css/main.css" %}" rel="stylesheet">
 {% endcompress %}
 
@@ -156,9 +157,9 @@
    
     
     
-<section id="colophon" class="wet-asphalt">
+<footer id="colophon" class="">
 	{% page_menu "pages/menus/footer.html" %}
-</section>
+</footer>
 <!-- @todo: add this too pages/menus/footer.html
 <footer id="footer" class="midnight-blue">
     <img class="footer-logo" src="{% static "img/mozaz.png" %}">
