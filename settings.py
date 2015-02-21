@@ -75,6 +75,7 @@ from __future__ import absolute_import, unicode_literals
 #
 BLOG_USE_FEATURED_IMAGE = True
 COMPRESS_ENABLED = True
+COMPRESS_CSS_FILTERS = ['compressor.filters.css_default.CssAbsoluteFilter',  'compressor.filters.cssmin.CSSMinFilter']
 
 # If True, the south application will be automatically added to the
 # INSTALLED_APPS setting.
