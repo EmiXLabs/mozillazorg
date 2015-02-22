@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mezzanine\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-01-26 02:56+0200\n"
+"POT-Creation-Date: 2015-02-22 02:09+0200\n"
 "PO-Revision-Date: 2015-01-25 23:38+0200\n"
 "Last-Translator: Emin Mastizada <emin@mastizada.com>\n"
 "Language-Team: Azerbaijani <az@li.org>\n"
@@ -28,7 +28,7 @@ msgstr "URL"
 
 #: models.py:70
 msgid "Leave blank to have the URL auto-generated from the title."
-msgstr ""
+msgstr "Adresin başlıqdan avtomatik yaradılması üçün boş buraxın."
 
 #: models.py:106
 msgid "View on site"
@@ -42,7 +42,7 @@ msgstr ""
 
 #: models.py:120
 msgid "Description"
-msgstr ""
+msgstr "Açıqlama"
 
 #: models.py:121
 msgid "Generate description"
@@ -56,7 +56,7 @@ msgstr ""
 
 #: models.py:125
 msgid "Keywords"
-msgstr ""
+msgstr "Açarlar"
 
 #: models.py:201
 msgid "Draft"
@@ -64,11 +64,11 @@ msgstr ""
 
 #: models.py:202
 msgid "Published"
-msgstr ""
+msgstr "Yayınlanmış"
 
 #: models.py:213
 msgid "Status"
-msgstr ""
+msgstr "Status"
 
 #: models.py:215
 msgid "With Draft chosen, will only be shown for admin users on the site."
@@ -104,11 +104,11 @@ msgstr ""
 
 #: models.py:447 models.py:467
 msgid "Author"
-msgstr ""
+msgstr "Müəllif"
 
 #: models.py:470
 msgid "Sites"
-msgstr ""
+msgstr "Saytlar"
 
 #: models.py:473
 msgid "Site permission"
@@ -118,21 +118,20 @@ msgstr ""
 msgid "Site permissions"
 msgstr ""
 
-#: settings.py:118
+#: settings.py:120
 msgid "English"
 msgstr "İngilizcə"
 
-#: settings.py:119
+#: settings.py:121
 msgid "Azerbaijani"
 msgstr "Azərbaycanca"
 
-#: templates/base.html:90
+#: templates/base.html:86
 msgid "Toggle navigation"
 msgstr "Naviqasiyanı keçir"
 
 #: templates/index.html:3 templates/index.html.py:4
-#: templates/search_results.html:13 templates/mobile/base.html:36
-#: templates/mobile/index.html:6 templates/pages/menus/breadcrumb.html:4
+#: templates/search_results.html:13 templates/pages/menus/breadcrumb.html:4
 #: templates/pages/menus/breadcrumb.html:10
 #: templates/pages/menus/dropdown.html:11
 #: templates/pages/menus/footer_tree.html:11
@@ -200,11 +199,10 @@ msgstr "Mozilla Azərbaycan Xəbərləri"
 
 #: templates/index.html:105
 msgid "Information for media is available in our media page."
-msgstr "Media məlumatlar üçün media səhifəmizə baxın"
+msgstr "Bütün yazılarımız üçün Bloq bölməsinə baxın."
 
 #: templates/search_results.html:5 templates/search_results.html.py:6
-#: templates/search_results.html:15 templates/mobile/search_results.html:5
-#: templates/mobile/search_results.html:6
+#: templates/search_results.html:15
 msgid "Search Results"
 msgstr "Axtarış Nəticələri"
 
@@ -228,9 +226,7 @@ msgstr ""
 "%(query)s sorğunuza uyğun %(search_type)s bölümündəki %(total)s nəticədən "
 "%(start)s / %(end)s göstərilir\n"
 
-#: templates/search_results.html:37 templates/blog/blog_post_detail.html:91
-#: templates/blog/blog_post_list.html:152
-#: templates/mobile/search_results.html:23
+#: templates/search_results.html:37 templates/blog/blog_post_list.html:152
 msgid "read more"
 msgstr "ətraflı oxu"
 
@@ -308,17 +304,14 @@ msgstr ""
 #: templates/blog/blog_post_list.html:122
 #: templates/generic/includes/comment.html:23
 #: templates/generic/includes/comment.html:43
-#: templates/generic/includes/comment.html:82
-#: templates/mobile/blog/blog_post_detail.html:30
-#: templates/mobile/blog/blog_post_list.html:28
-#: templates/twitter/tweets.html:19
+#: templates/generic/includes/comment.html:82 templates/twitter/tweets.html:19
 #, python-format
 msgid "%(sometime)s ago"
 msgstr "%(sometime)s əvvəl"
 
 #: templates/blog/blog_post_detail.html:68
 #: templates/blog/blog_post_list.html:129
-#: templates/generic/includes/comments.html:4
+#: templates/generic/includes/comments.html:3
 msgid "Comments"
 msgstr "Şərhlər"
 
@@ -330,29 +323,26 @@ msgid_plural "%(comments_count)s comments"
 msgstr[0] "%(comments_count)s şərh"
 msgstr[1] "%(comments_count)s şərh"
 
-#: templates/blog/blog_post_detail.html:96
+#: templates/blog/blog_post_detail.html:95
 #: templates/blog/blog_post_list.html:157
 #: templates/blog/includes/filter_panel.html:59
-#: templates/mobile/blog/blog_post_detail.html:41
 msgid "Tags"
 msgstr "Teqlər"
 
-#: templates/blog/blog_post_detail.html:128
+#: templates/blog/blog_post_detail.html:119
 #, fuzzy
 msgid "Share on Twitter"
 msgstr "Twitterdə Paylaş"
 
-#: templates/blog/blog_post_detail.html:129
+#: templates/blog/blog_post_detail.html:120
 msgid "Share on Facebook"
 msgstr "Facebookda Paylaş"
 
-#: templates/blog/blog_post_detail.html:154
+#: templates/blog/blog_post_detail.html:155
 msgid "Related posts"
 msgstr "Bağlı yazılar"
 
 #: templates/blog/blog_post_list.html:4 templates/blog/blog_post_list.html:22
-#: templates/mobile/blog/blog_post_list.html:4
-#: templates/mobile/blog/blog_post_list.html:19
 msgid "Blog"
 msgstr "Bloq"
 
@@ -438,7 +428,7 @@ msgid ""
 msgstr ""
 
 #: templates/errors/404.html:6 templates/errors/404.html.py:10
-#: templates/errors/404.html:15 templates/mobile/404.html:6
+#: templates/errors/404.html:15
 msgid "Page not found"
 msgstr "Səhifə Tapılmadı"
 
@@ -453,7 +443,7 @@ msgstr ""
 "Xoş səyahətlər..."
 
 #: templates/errors/500.html:6 templates/errors/500.html.py:10
-#: templates/errors/500.html:15 templates/mobile/500.html:6
+#: templates/errors/500.html:15
 msgid "Error"
 msgstr "Xəta"
 
@@ -487,7 +477,7 @@ msgstr "Şərh təstid gözləyir"
 msgid "There are currently no comments"
 msgstr "Hazırda heç bir şərh yoxdur"
 
-#: templates/generic/includes/comments.html:23
+#: templates/generic/includes/comments.html:20
 msgid "New Comment"
 msgstr "Yeni Şərh"
 
@@ -532,7 +522,6 @@ msgid "/"
 msgstr "/"
 
 #: templates/includes/search_form.html:5
-#: templates/mobile/includes/search.html:4
 msgid "Search"
 msgstr "Axtar"
 
@@ -543,72 +532,6 @@ msgstr "Hər şey"
 #: templates/includes/search_form.html:26
 msgid "Go"
 msgstr "Get"
-
-#: templates/mobile/404.html:10
-msgid "The page you requested does not exist."
-msgstr "Sorğuladığınız səhifə mövcud deyil"
-
-#: templates/mobile/500.html:10
-msgid "Sorry, an error occurred."
-msgstr "Bağışlayın, xəta baş verdi."
-
-#: templates/mobile/base.html:49
-msgid "View Full Site"
-msgstr "Tam saytı gör"
-
-#: templates/mobile/search_results.html:12
-msgid "No results were found matching your query: "
-msgstr "Sorğunuza uyğun heç bir nəticə tapılmadı: "
-
-#: templates/mobile/search_results.html:14
-msgid "Showing"
-msgstr ""
-
-#: templates/mobile/search_results.html:14
-msgid "to"
-msgstr ""
-
-#: templates/mobile/search_results.html:14
-msgid "of"
-msgstr ""
-
-#: templates/mobile/search_results.html:15
-msgid "results matching your query:"
-msgstr ""
-
-#: templates/mobile/blog/blog_post_detail.html:23
-msgid "Posted by"
-msgstr ""
-
-#: templates/mobile/blog/blog_post_detail.html:52
-msgid "Share this on:"
-msgstr ""
-
-#: templates/mobile/blog/blog_post_detail.html:54
-msgid "or"
-msgstr ""
-
-#: templates/mobile/includes/pagination.html:6
-msgid "Previous"
-msgstr ""
-
-#: templates/mobile/includes/pagination.html:9
-msgid "Next"
-msgstr ""
-
-#: templates/mobile/includes/search.html:5
-msgid "Use "
-msgstr ""
-
-#: templates/mobile/includes/search.html:5
-msgid "quotes"
-msgstr ""
-
-#: templates/mobile/includes/search.html:5
-msgid ""
-" for exact phrases, + to make a word or phrase required, and - to exclude a "
-"word or phrase."
-msgstr ""
 
 #: templates/pages/menus/admin.html:31
 msgid "Add"
@@ -667,3 +590,15 @@ msgstr "Digər dillər:"
 #: templates/twitter/tweets.html:7
 msgid "Recent Tweets"
 msgstr "Son Tweetlər"
+
+#~ msgid "The page you requested does not exist."
+#~ msgstr "Sorğuladığınız səhifə mövcud deyil"
+
+#~ msgid "Sorry, an error occurred."
+#~ msgstr "Bağışlayın, xəta baş verdi."
+
+#~ msgid "View Full Site"
+#~ msgstr "Tam saytı gör"
+
+#~ msgid "No results were found matching your query: "
+#~ msgstr "Sorğunuza uyğun heç bir nəticə tapılmadı: "
