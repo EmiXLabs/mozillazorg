@@ -4,7 +4,7 @@
 {% block meta_image %}
 <meta property="og:title" content="{{ blog_post.meta_title }}" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="{{ blog_post.get_absolute_url }}" />
+<meta property="og:url" content="http://www.mozillaz.org{{ blog_post.get_absolute_url }}" />
 <meta property="og:image" content="http://www.mozillaz.org{{ MEDIA_URL }}{{blog_post.featured_image }}" />
 {% endblock %}
 {% block share_meta_title %}{{ blog_post.meta_title }}{% endblock %}
