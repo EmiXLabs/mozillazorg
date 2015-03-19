@@ -7,7 +7,12 @@
 <meta name="keywords" content="{% block meta_keywords %}{% endblock %}">
 <meta name="title" content="{% block share_meta_title %}{% endblock %}{% if settings.SITE_TITLE %} | {{ settings.SITE_TITLE }}{% endif %}">
 <meta name="description" content="{% block meta_description %}{% endblock %}">
-{% block meta_image %}{% endblock %}
+{% block meta_image %}
+<meta property="og:title" content="Mozilla Azerbaijan - Mozilla Azərbaycan" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="http://www.mozillaz.org" />
+<meta property="og:image" content="http://www.mozillaz.org/static/img/mozaz.png" />
+{% endblock %}
 <title>{% block meta_title %}{% endblock %}{% if settings.SITE_TITLE %} | {{ settings.SITE_TITLE }}{% endif %}</title>
 <link rel="shortcut icon" href="{% static "img/favicon.ico" %}">
 <link rel="apple-touch-icon" type="image/png" sizes="180x180" href="{% static "img/apple-touch-icon-180x180.png" %}">
