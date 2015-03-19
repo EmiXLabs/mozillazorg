@@ -1,6 +1,8 @@
 {% extends "blog/blog_post_list.html" %}
 {% load mezzanine_tags comment_tags keyword_tags rating_tags i18n future disqus_tags %}
 
+{% block meta_image %}<meta property="og:image" content="{{ MEDIA_URL }}{{blog_post.featured_image }}">{% endblock %}
+{% block share_meta_title %}{{ blog_post.meta_title }}{% endblock %}
 {% block meta_title %}{{ blog_post.meta_title }}{% endblock %}
 
 {% block meta_keywords %}{% metablock %}
@@ -11,7 +13,6 @@
 {% block meta_description %}{% metablock %}
 {{ blog_post.description }}
 {% endmetablock %}{% endblock %}
-
 {% block title %}
 {% editable blog_post.title %}{{ blog_post.title }}{% endeditable %}
 {% endblock %}
