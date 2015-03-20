@@ -215,6 +215,8 @@ PROJECT_DIRNAME = PROJECT_ROOT.split(os.sep)[-1]
 # project specific.
 CACHE_MIDDLEWARE_KEY_PREFIX = PROJECT_DIRNAME
 
+CACHE_MIDDLEWARE_SECONDS = 86400
+
 # URL prefix for static files.
 # Example: "http://media.lawrence.com/static/"
 STATIC_URL = "/static/"
