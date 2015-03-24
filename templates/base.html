@@ -5,14 +5,14 @@
 <!--Metas-->
     <meta http-equiv="Content-type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="{% block meta_keywords %}{% endblock %}">
-    <meta name="title" content="{% block share_meta_title %}{% endblock %}{% if settings.SITE_TITLE %} | {{ settings.SITE_TITLE }}{% endif %}">
-    <meta name="description" content="{% block meta_description %}{% endblock %}">
+    <meta name="keywords" content="{% block meta_keywords %}Mozilla, Azerbaijan, Mozillaz, Community, İcma, Azərbaycan, Firefox, Thunderbird, Android, Sync, Hello{% endblock %}">
+    <meta name="title" content="{% block share_meta_title %}{% endblock %} - {% block meta_title %}{% endblock %}{% if settings.SITE_TITLE %} | {{ settings.SITE_TITLE }}{% endif %}">
+    <meta name="description" content="{% block meta_description %}Mozilla Azerbaijan Community Homepage{% endblock %}">
 {% block meta_image %}
-    <meta property="og:title" content="Mozilla Azerbaijan - Mozilla Azərbaycan" />
+    <meta property="og:title" content="{% block share_meta_title %}{% endblock %} - {% block meta_title %}{% endblock %}{% if settings.SITE_TITLE %} | {{ settings.SITE_TITLE }}{% endif %}" />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="http://www.mozillaz.org" />
-    <meta property="og:image" content="http://www.mozillaz.org/static/img/mozaz.png" />
+    <meta property="og:url" content="https://www.mozillaz.org" />
+    <meta property="og:image" content="//www.mozillaz.org/static/img/mozaz.png" />
 {% endblock %}
 <!--/Metas-->
     <title>{% block meta_title %}{% endblock %}{% if settings.SITE_TITLE %} | {{ settings.SITE_TITLE }}{% endif %}</title>
@@ -20,7 +20,7 @@
     <link rel="shortcut icon" href="{% static "img/favicon.ico" %}">
     <link rel="apple-touch-icon" type="image/png" sizes="180x180" href="{% static "img/apple-touch-icon-180x180.png" %}">
     <link rel="icon" type="image/png" sizes="196x196" href="{% static "img/favicon-196x196.png" %}">
-    <link rel="canonical" hreflang="az" href="http://www.mozillaz.org/">
+    <link rel="canonical" hreflang="{{ LANGUAGE_CODE }}" href="https://www.mozillaz.org/">
     {% comment %}
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
@@ -35,8 +35,8 @@
 <!--/Feed-->
 {% endifinstalled %}
 <!--Styles-->
-    <link rel="stylesheet" href="{% static "css/bootstrap.min.css" %}" type="text/css">
-    <link rel="stylesheet" href="{% static "css/font-awesome.min.css" %}" type="text/css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" type="text/css">
 {% load compress %}
 {% compress css %}
     <link rel="stylesheet" href="{% static "css/mezzanine.css" %}">
@@ -65,7 +65,8 @@
     <script src="{% static "js/respond.min.js" %}"></script>
     <![endif]-->
 {% block extra_head %}{% endblock %}
-<script>window.scrollback = {"room":"mozillaz","titlebarColor":"#c13832","form":"toast","minimize":true};(function(d,s,h,e){e=d.createElement(s);e.async=1;e.src=(location.protocol === "https:" ? "https:" : "http:") + "//scrollback.io/client.min.js";d.getElementsByTagName(s)[0].parentNode.appendChild(e);}(document,"script"));</script>
+<script>window.scrollback = {"room":"mozillaz","titlebarColor":"#c13832","form":"toast","minimize":true};(function(d,s,h,e){e=d.createElement(s);e.async=1;e.src=(location.protocol === "https:" ? "https:" : "http:") + "//scrollback.io/client.min.js";d.getElementsByTagName(s)[0].parentNode.appendChild(e);}(document,"script"));
+</script>
 </head>
 
 <body id="{% block body_id %}body{% endblock %}">
@@ -129,9 +130,9 @@
 <footer id="colophon" class="">
    {% page_menu "pages/menus/footer.html" %}
 </footer>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 {% compress js %}
 <script src="{% static "mezzanine/js/"|add:settings.JQUERY_FILENAME %}"></script>
-<script src="{% static "js/bootstrap.min.js" %}"></script>
 <script src="{% static "js/bootstrap-extras.js" %}"></script>
 {% block extra_js %}{% endblock %}
 {% include "includes/footer_scripts.html" %}
