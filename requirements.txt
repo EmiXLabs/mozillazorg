@@ -1,5 +1,5 @@
 Mezzanine==3.1.10
-Django==1.6.10
+Django==1.6.11
 pytz
 python-memcached
 django_compressor
