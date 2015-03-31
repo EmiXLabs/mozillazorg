@@ -3,3 +3,4 @@ Django==1.6.11
 pytz
 python-memcached
 django_compressor
+html5lib
