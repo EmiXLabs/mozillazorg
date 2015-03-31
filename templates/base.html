@@ -11,7 +11,7 @@
 {% block meta_image %}
     <meta property="og:title" content="{% block share_meta_title1 %}{% endblock %}{% if settings.SITE_TITLE %} | {{ settings.SITE_TITLE }}{% endif %}" />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="http://www.mozillaz.org" />
+    <meta property="og:url" content="http://www.mozillaz.org{{ request.path }}" />
     <meta property="og:image" content="http://www.mozillaz.org/static/img/mozaz.png" />
 {% endblock %}
 <!--/Metas-->
@@ -20,7 +20,9 @@
     <link rel="shortcut icon" href="{% static "img/favicon.ico" %}">
     <link rel="apple-touch-icon" type="image/png" sizes="180x180" href="{% static "img/apple-touch-icon-180x180.png" %}">
     <link rel="icon" type="image/png" sizes="196x196" href="{% static "img/favicon-196x196.png" %}">
-    <link rel="canonical" hreflang="{{ LANGUAGE_CODE }}" href="http://www.mozillaz.org/">
+    <link rel="canonical" hreflang="{{ LANGUAGE_CODE }}" href="http://www.mozillaz.org{{ request.path }}">
+    <link rel="alternate" hreflang="en" href="http://www.mozilla.org{{ request.path }}" title="English">
+    <link rel="alternate" hreflang="az" href="http://www.mozilla.org{{ request.path }}" title="Azərbaycanca">
     {% comment %}
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
@@ -32,8 +34,6 @@
 <!--Feed-->
     <link rel="alternate" type="application/rss+xml" title="RSS" href="{% url "blog_post_feed" "rss" %}">
     <link rel="alternate" type="application/atom+xml" title="Atom" href="{% url "blog_post_feed" "atom" %}">
-    <link rel="alternate" hreflang="en" href="https://www.mozilla.org/" title="English">
-    <link rel="alternate" hreflang="az" href="https://www.mozilla.org/" title="Azərbaycanca">
 <!--/Feed-->
 {% endifinstalled %}
 <!--Styles-->
