@@ -602,3 +602,43 @@ msgstr "Son Tweetlər"
 
 #~ msgid "No results were found matching your query: "
 #~ msgstr "Sorğunuza uyğun heç bir nəticə tapılmadı: "
+
+#: utils/timesince.py:24
+#, python-format
+msgid "%d year"
+msgid_plural "%d years"
+msgstr[0] "%d il"
+
+#: utils/timesince.py:25
+#, python-format
+msgid "%d month"
+msgid_plural "%d months"
+msgstr[0] "%d ay"
+
+#: utils/timesince.py:26
+#, python-format
+msgid "%d week"
+msgid_plural "%d weeks"
+msgstr[0] "%d həftə"
+
+#: utils/timesince.py:27
+#, python-format
+msgid "%d day"
+msgid_plural "%d days"
+msgstr[0] "%d gün"
+
+#: utils/timesince.py:28
+#, python-format
+msgid "%d hour"
+msgid_plural "%d hours"
+msgstr[0] "%d saat"
+
+#: utils/timesince.py:29
+#, python-format
+msgid "%d minute"
+msgid_plural "%d minutes"
+msgstr[0] "%d dəqiqə"
+
+#: utils/timesince.py:45
+msgid "0 minutes"
+msgstr "0 dəqiqə"
