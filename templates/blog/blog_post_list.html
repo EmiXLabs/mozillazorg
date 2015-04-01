@@ -104,11 +104,11 @@
 {% block blog_post_list_post_metainfo %}
 {% editable blog_post.publish_date %}
                    <div class="entry-meta">
-                                <span><i class="icon-user"></i> {% with blog_post.user as author %}
+                                <span><i class="fa fa-user"></i> {% with blog_post.user as author %}
 								<a href="{% url "blog_post_list_author" author %}">{{ author.get_full_name|default:author.username }}</a>
 								{% endwith %}
 								</span>
-                                <span><i class="icon-folder-close"></i>
+                                <span><i class="fa fa-folder"></i>
                                 {% with blog_post.categories.all as categories %}
 								{% if categories %}
 								{% trans "in" %}
@@ -119,8 +119,8 @@
 								{% endwith %}
                                 
                                 </span>
-                                <span><i class="icon-calendar"></i> {% blocktrans with sometime=blog_post.publish_date|date:'d F Y H:i' %}{{ sometime }}{% endblocktrans %}</span>
-                                <span><i class="icon-comment"></i> 
+                                <span><i class="fa fa-calendar"></i> {% blocktrans with sometime=blog_post.publish_date|date:'d F Y H:i' %}{{ sometime }}{% endblocktrans %}</span>
+                                <span><i class="fa fa-comments"></i>
                                 {% if blog_post.allow_comments %}
 									
 									{% if settings.COMMENTS_DISQUS_SHORTNAME %}

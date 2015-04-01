@@ -298,7 +298,7 @@ msgstr "Qeydiyyat"
 #: templates/blog/blog_post_detail.html:53
 #: templates/blog/blog_post_list.html:114
 msgid "in"
-msgstr ""
+msgstr ":"
 
 #: templates/blog/blog_post_detail.html:61
 #: templates/blog/blog_post_list.html:122
