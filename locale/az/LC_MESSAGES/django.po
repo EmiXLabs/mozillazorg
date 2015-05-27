@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mezzanine\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-02-22 02:09+0200\n"
+"POT-Creation-Date: 2015-05-27 19:42+0300\n"
 "PO-Revision-Date: 2015-01-25 23:38+0200\n"
 "Last-Translator: Emin Mastizada <emin@mastizada.com>\n"
 "Language-Team: Azerbaijani <az@li.org>\n"
@@ -126,13 +126,9 @@ msgstr "İngilizcə"
 msgid "Azerbaijani"
 msgstr "Azərbaycanca"
 
-#: templates/base.html:86
-msgid "Toggle navigation"
-msgstr "Naviqasiyanı keçir"
-
 #: templates/index.html:3 templates/index.html.py:4
 #: templates/search_results.html:13 templates/pages/menus/breadcrumb.html:4
-#: templates/pages/menus/breadcrumb.html:10
+#: templates/pages/menus/breadcrumb.html:9
 #: templates/pages/menus/dropdown.html:11
 #: templates/pages/menus/footer_tree.html:11
 #: templates/pages/menus/mobile.html:10 templates/pages/menus/primary.html:8
@@ -148,24 +144,24 @@ msgstr "Firefox: Azad seçim"
 msgid "Help us celebrate 10 years of choice and independence online."
 msgstr "Onlayn seçimin və azadlığın 10 illiyini qeyd etməkdə bizə kömək edin."
 
-#: templates/index.html:25 templates/index.html.py:62 templates/index.html:76
+#: templates/index.html:25 templates/index.html.py:49 templates/index.html:63
 #: templates/pages/index.html:34 templates/pages/index.html.py:52
 msgid "Learn More"
 msgstr "Ətraflı Öyrən"
 
-#: templates/index.html:56
+#: templates/index.html:43
 msgid "Choose Independent, Choose Firefox"
 msgstr "Azadlığı Seç, Firefox-u Seç"
 
-#: templates/index.html:58
+#: templates/index.html:45
 msgid "Most Trusted Internet Company For Privacy"
 msgstr "Məxfilikdə Ən Güvənli İnternet Şirkəti"
 
-#: templates/index.html:73
+#: templates/index.html:60
 msgid "Firefox Hello - As easy as saying hello"
 msgstr "Firefox Hello - Salam demək qədər asan"
 
-#: templates/index.html:74
+#: templates/index.html:61
 msgid ""
 "Meet Firefox Hello, the easiest way to connect for free over video with "
 "anyone, anywhere."
@@ -173,31 +169,31 @@ msgstr ""
 "Firefox Hello ilə tanış olun, hər kəslə, hər yerdə pulsuz video ilə "
 "bağlanmanın ən asan yolu."
 
-#: templates/index.html:94
+#: templates/index.html:81
 msgid "Firefox Desktop"
 msgstr "Masaüstü üçün Firefox"
 
-#: templates/index.html:94
+#: templates/index.html:81
 msgid "Get it free on Mozilla"
 msgstr "Mozilladan Endir"
 
-#: templates/index.html:96
+#: templates/index.html:83
 msgid "Firefox for Android"
 msgstr "Android üçün Firefox"
 
-#: templates/index.html:96
+#: templates/index.html:83
 msgid "Get it on Google Play"
 msgstr "Google Playdə"
 
-#: templates/index.html:104
+#: templates/index.html:91
 msgid "Latest Posts"
 msgstr "Son Yazılarımız"
 
-#: templates/index.html:105
+#: templates/index.html:92
 msgid "Mozilla Azerbaijan News"
 msgstr "Mozilla Azərbaycan Xəbərləri"
 
-#: templates/index.html:105
+#: templates/index.html:92
 msgid "Information for media is available in our media page."
 msgstr "Bütün yazılarımız üçün Bloq bölməsinə baxın."
 
@@ -295,13 +291,12 @@ msgstr "Daxil ol"
 msgid "Sign up"
 msgstr "Qeydiyyat"
 
-#: templates/blog/blog_post_detail.html:53
+#: templates/blog/blog_post_detail.html:56
 #: templates/blog/blog_post_list.html:114
 msgid "in"
 msgstr ":"
 
-#: templates/blog/blog_post_detail.html:61
-#: templates/blog/blog_post_list.html:122
+#: templates/blog/blog_post_detail.html:63
 #: templates/generic/includes/comment.html:23
 #: templates/generic/includes/comment.html:43
 #: templates/generic/includes/comment.html:82 templates/twitter/tweets.html:19
@@ -309,13 +304,13 @@ msgstr ":"
 msgid "%(sometime)s ago"
 msgstr "%(sometime)s əvvəl"
 
-#: templates/blog/blog_post_detail.html:68
+#: templates/blog/blog_post_detail.html:69
 #: templates/blog/blog_post_list.html:129
 #: templates/generic/includes/comments.html:3
 msgid "Comments"
 msgstr "Şərhlər"
 
-#: templates/blog/blog_post_detail.html:72
+#: templates/blog/blog_post_detail.html:73
 #: templates/blog/blog_post_list.html:133
 #, python-format
 msgid "%(comments_count)s comment"
@@ -323,22 +318,30 @@ msgid_plural "%(comments_count)s comments"
 msgstr[0] "%(comments_count)s şərh"
 msgstr[1] "%(comments_count)s şərh"
 
-#: templates/blog/blog_post_detail.html:95
+#: templates/blog/blog_post_detail.html:79
+msgid "Views"
+msgstr ""
+
+#: templates/blog/blog_post_detail.html:79
+msgid "loading..."
+msgstr ""
+
+#: templates/blog/blog_post_detail.html:93
 #: templates/blog/blog_post_list.html:157
 #: templates/blog/includes/filter_panel.html:59
 msgid "Tags"
 msgstr "Teqlər"
 
-#: templates/blog/blog_post_detail.html:119
+#: templates/blog/blog_post_detail.html:113
 #, fuzzy
 msgid "Share on Twitter"
 msgstr "Twitterdə Paylaş"
 
-#: templates/blog/blog_post_detail.html:120
+#: templates/blog/blog_post_detail.html:114
 msgid "Share on Facebook"
 msgstr "Facebookda Paylaş"
 
-#: templates/blog/blog_post_detail.html:155
+#: templates/blog/blog_post_detail.html:146
 msgid "Related posts"
 msgstr "Bağlı yazılar"
 
@@ -373,6 +376,11 @@ msgstr ""
 #: templates/blog/blog_post_list.html:67
 msgid "Viewing posts by"
 msgstr ""
+
+#: templates/blog/blog_post_list.html:122
+#, fuzzy, python-format
+msgid "%(sometime)s"
+msgstr "%(sometime)s əvvəl"
 
 #: templates/blog/includes/filter_panel.html:6
 msgid "Recent Posts"
@@ -591,18 +599,6 @@ msgstr "Digər dillər:"
 msgid "Recent Tweets"
 msgstr "Son Tweetlər"
 
-#~ msgid "The page you requested does not exist."
-#~ msgstr "Sorğuladığınız səhifə mövcud deyil"
-
-#~ msgid "Sorry, an error occurred."
-#~ msgstr "Bağışlayın, xəta baş verdi."
-
-#~ msgid "View Full Site"
-#~ msgstr "Tam saytı gör"
-
-#~ msgid "No results were found matching your query: "
-#~ msgstr "Sorğunuza uyğun heç bir nəticə tapılmadı: "
-
 #: utils/timesince.py:24
 #, python-format
 msgid "%d year"
@@ -642,3 +638,12 @@ msgstr[0] "%d dəqiqə"
 #: utils/timesince.py:45
 msgid "0 minutes"
 msgstr "0 dəqiqə"
+
+msgid "The page you requested does not exist."
+msgstr "Sorğuladığınız səhifə mövcud deyil"
+
+msgid "Sorry, an error occurred."
+msgstr "Bağışlayın, xəta baş verdi."
+
+msgid "No results were found matching your query: "
+msgstr "Sorğunuza uyğun heç bir nəticə tapılmadı: "

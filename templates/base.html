@@ -37,7 +37,7 @@
 <!--/Feed-->
 {% endifinstalled %}
 <!--Styles-->
-    <link rel="stylesheet" href="{% static "css/bootstrap.min.css" %}" type="text/css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootswatch/3.3.4/paper/bootstrap.min.css" type="text/css">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" type="text/css">
 {% load compress %}
 {% compress css %}
@@ -67,30 +67,42 @@
     <script src="{% static "js/respond.min.js" %}"></script>
     <![endif]-->
 {% block extra_head %}{% endblock %}
-<script>window.scrollback = {"room":"mozillaz","titlebarColor":"#c13832","form":"toast","minimize":true};(function(d,s,h,e){e=d.createElement(s);e.async=1;e.src=(location.protocol === "https:" ? "https:" : "http:") + "//scrollback.io/client.min.js";d.getElementsByTagName(s)[0].parentNode.appendChild(e);}(document,"script"));
+{% comment %}
+<script>window.scrollback = {"room":"mozillaz","titlebarColor":"#c13832","form":"canvas","minimize":true};(function(d,s,h,e){e=d.createElement(s);e.async=1;e.src=(location.protocol === "https:" ? "https:" : "http:") + "//scrollback.io/client.min.js";d.getElementsByTagName(s)[0].parentNode.appendChild(e);}(document,"script"));
 </script>
+{% endcomment %}
 </head>
 
 <body id="{% block body_id %}body{% endblock %}">
-<header class="navbar navbar-inverse navbar-fixed-top wet-asphalt" role="banner">
-    <a href="#" id="tabzilla" data-infobar="update translation">mozilla</a>
-    <div class="container">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                <span class="sr-only">{% trans "Toggle navigation" %}</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            {% if settings.SITE_TITLE %}<a class="navbar-brand" href="/">{{ settings.SITE_TITLE }}</a>{% endif %}
-			{% if settings.SITE_TAGLINE %}<p class="navbar-text visible-lg">{{ settings.SITE_TAGLINE }}</p>{% endif %}
-        </div>
-        <div class="collapse navbar-collapse">
-           {% page_menu "pages/menus/dropdown.html" %}
-            </ul>
-        </div>
+<a href="#" id="tabzilla" data-infobar="update translation">mozilla</a>
+<nav class="navbar navbar-inverse wet-asphalt">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      {% if settings.SITE_TITLE %}<a class="navbar-brand" href="/">{{ settings.SITE_TITLE }}</a>{% endif %}
+      {% if settings.SITE_TAGLINE %}<p class="navbar-text visible-lg">{{ settings.SITE_TAGLINE }}</p>{% endif %}
     </div>
-</header>
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+      {% page_menu "pages/menus/dropdown.html" %}
+      {% comment %} <form class="navbar-form navbar-left" role="search">
+        <div class="form-group">
+          <input class="form-control" placeholder="Search" type="text">
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">Link</a></li>
+      </ul>
+      {% endcomment %}
+    </div>
+  </div>
+</nav>
 
 <div class="container">
   {% nevercache %}
@@ -132,16 +144,16 @@
 <footer id="colophon" class="">
    {% page_menu "pages/menus/footer.html" %}
 </footer>
+<script src="{% static "js/jquery.min.js" %}"></script>
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 {% compress js %}
-<script src="{% static "mezzanine/js/"|add:settings.JQUERY_FILENAME %}"></script>
 <script src="{% static "js/bootstrap-extras.js" %}"></script>
 {% block extra_js %}{% endblock %}
-{% include "includes/footer_scripts.html" %}
-{% endcompress %}
 <script src="{% static "js/jquery.prettyPhoto.js" %}"></script>
 <script src="{% static "js/jquery.isotope.min.js" %}"></script>
+{% include "includes/footer_scripts.html" %}
 <script src="{% static "js/main.min.js" %}"></script>
+{% endcompress %}
 <script src="//mozorg.cdn.mozilla.net/az/tabzilla/tabzilla.js"></script>
 </body>
 </html>
