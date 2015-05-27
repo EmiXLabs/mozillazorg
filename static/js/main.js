@@ -20,9 +20,11 @@ jQuery(function($) {
         });
         $('.carousel-next').click(function(e) {
             $('#main-slider').carousel('next');
+            return false;
         });
         $('.carousel-prev').click(function(e) {
             $('#main-slider').carousel('prev');
+            return false;
         });
         $( '.centered' ).each(function( e ) {
             $(this).css('margin-top',  ($('#main-slider').height() - $(this).height())/2);
